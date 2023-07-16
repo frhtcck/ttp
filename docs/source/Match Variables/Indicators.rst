@@ -32,14 +32,14 @@ _exact_
 ------------------------------------------------------------------------------
 ``{{ name | _exact_ }}``
 
-By default, the parser will replace all digits in a template with the '\d+' pattern.
-However, if ``_exact_`` is present in any match variable within a line, digits will remain unchanged and parsed as is.
+Varsayılan olarak, ayrıştırıcı bir şablondaki tüm rakamları '\d+' modeliyle değiştirecektir.
+Ancak, bir satırdaki herhangi bir eşleşme değişkeninde "_exact_" varsa, basamaklar değişmeden kalır ve olduğu gibi ayrıştırılır.
 
-This is an important consideration for when a pattern contains numbers.
+Bu, bir kalıbın sayı içerdiği durumlarda dikkate alınması gereken önemli bir husustur.
 
-**Example: capturing an IPv4 configuration**
+**Örnek: IPv4 yapılandırmasını yakalama**
 
-Sample Data::
+Örnek veri::
 
  vrf VRF-A
   address-family ipv4 unicast
