@@ -5,28 +5,28 @@
 Indicators
 ================
 
-Indicators, or directives, can be used to change parsing logic or indicate certain events.
+Göstergeler veya direktifler, ayrıştırma mantığını değiştirmek veya belirli olayları belirtmek için kullanılabilir.
 
 .. list-table:: indicators
    :widths: 10 90
    :header-rows: 1
 
-   * - Name
-     - Description
+   * - İsim
+     - Tanım
    * - `_exact_`_
-     - Leaves digits as is without replacing them with ``\d+`` pattern
+     - Rakamları ``\d+`` kalıbıyla değiştirmeden olduğu gibi bırakır
    * - `_exact_space_`_
-     - Leaves space characters as is without replacing them with ``r(\\ +)`` pattern
+     - Boşluk karakterlerini ``r(\\ +)`` kalıbıyla değiştirmeden olduğu gibi bırakır
    * - `_start_`_
-     - Explicitly indicates start of the group
+     - grubun başlangıcını gösterir
    * - `_end_`_
-     - Explicitly indicates end of the group
+     - grubun sonunu gösterir
    * - `_line_`_
-     - If present, any line will be matched
+     - Varsa, herhangi bir satır eşleştirilir
    * - `ignore`_
-     - Substitute string at given position with regular expression without matching results
+     - Belirtilen konumdaki dizeyi, eşleşen sonuçlar olmadan normal ifadeyle değiştirin
    * - `_headers_`_
-     - To dynamically form regex for parsing fixed-width, one-line text tables
+     - Sabit genişlikli, tek satırlık metin tablolarını ayrıştırarak normal ifadeyi dinamik olarak oluşturmak için
 
 _exact_
 ------------------------------------------------------------------------------
